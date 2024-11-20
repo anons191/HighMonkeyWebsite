@@ -1,0 +1,46 @@
+/* Dropdown Menu Styles */
+.menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  .menu li {
+    margin: 0;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 3px;
+  }
+  
+  .menu li a:hover {
+    background-color: #333;
+    color: #f39c12;
+  }
+  
+  .menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu.show {
+    display: flex; /* Show the dropdown when toggled */
+  }
+  

@@ -22,21 +22,5 @@ function createSmoke() {
 // Create smoke particles at intervals
 setInterval(createSmoke, 500); // Adjust frequency as needed
 
-// Create YouTube player
-let player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player("player", {
-    videoId: "Cal Scruby - MONEY BUY DRUGS (Official Music Video)", // Replace with your video ID
-    playerVars: {
-      autoplay: 1,
-      loop: 1,
-      playlist: "Cal Scruby - MONEY BUY DRUGS (Official Music Video)", // Required for loop
-    },
-    events: {
-      onReady: function(event) {
-        event.target.setVolume(30); // Set volume to a lower level if needed
-        event.target.playVideo(); // Start playing
-      },
-    },
-  });
-}
+
+
