@@ -1,0 +1,38 @@
+#background-smoke {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .smoke {
+    position: absolute;
+    width: 50px; /* Increase size if you want larger smoke clouds */
+    height: 25px;
+    background: rgb(244, 242, 242); /* Darker gray color for smoke */
+    border-radius: 50%;
+    opacity: 0;
+    animation: rise 8s ease-in-out infinite; /* Adjust duration if needed */
+  }
+  
+  @keyframes rise {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.6); /* Start at 60% size */
+    }
+    20% {
+      opacity: 0.6; /* Increase opacity as smoke becomes visible */
+    }
+    70% {
+      opacity: 0.3; /* Start fading out as smoke rises */
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100vh) scale(1.4); /* Rise to the top, scale up */
+    }
+  }
+  
