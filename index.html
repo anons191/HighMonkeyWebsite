@@ -3,48 +3,230 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>High Monkey</title>
-  <link rel="stylesheet" href="styles.css">
-  
-  <link rel="stylesheet" href="smoke.css">
+  <title>The High Monkey Story</title>
+  <style>
+    /* General Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Header Section */
+    .header {
+      height: 100vh;
+      background: url('./Landing.png') no-repeat center center/cover;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 4rem;
+      color: gold;
+      animation: fadeIn 2s ease-in-out;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .header p {
+      font-size: 1.5rem;
+      color: white;
+      margin: 20px 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow behind the text */
+    }
+
+    .header .cta-button {
+      margin-top: 20px;
+      background-color: gold;
+      color: black;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-transform: uppercase;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .header .cta-button:hover {
+      transform: scale(1.1);
+      background-color: darkgoldenrod;
+    }
+
+    /* Mobile Header Image */
+  @media (max-width: 768px) {
+    .header {
+      background: url('./Landing4mobile.png') no-repeat center center/cover;
+      background-color: black;
+    }
+  }
+
+    /* Parallax Scrolling */
+    .parallax {
+      height: 50vh;
+      background: url('./logo.jpeg') no-repeat center center/cover;
+      position: relative;
+      background-attachment: fixed;
+    }
+
+    /* Main Story Section */
+    .story {
+      padding: 50px 20px;
+      background-color: black;
+      text-align: center;
+    }
+
+    .story h2 {
+      font-size: 3rem;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .chapter {
+      margin-bottom: 50px;
+    }
+
+        .chapter img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+
+    .chapter p {
+      font-size: 1.2rem;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .chapter p span {
+      font-weight: bold;
+      color: #ff7f00;
+    }
+
+    /* Call-to-Action Section */
+    .call-to-action {
+      padding: 50px;
+      text-align: center;
+      background-color: #1b5e20;
+      color: white;
+    }
+
+    .call-to-action h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .call-to-action .cta-button {
+      background-color: #ffeb3b;
+      color: #333;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-transform: uppercase;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    
+
+    .call-to-action .cta-button:hover {
+      transform: scale(1.1);
+      background-color: #fdd835;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0a4a1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    footer .easter-egg {
+      font-size: 0.9rem;
+      margin-top: 10px;
+      cursor: pointer;
+      color: yellow;
+    }
+
+    footer .easter-egg:hover {
+      color: orange;
+    }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Background smoke container -->
-  <div id="background-smoke"></div>
 
-  <div class="container">
-    <!-- Navigation Bar -->
-    <nav class="nav-bar">
-      <div class="logo">
-        <img src="./gifs/Gmgold.gif" alt="High Monkey Logo">
-      </div>
-      <ul class="menu">
-        <li><a href="story.html">Story</a></li>
-        <li><a href="vision.html">Vision</a></li>
-        <li><a href="https://highapp-production.up.railway.app/">Mint a Monkey</a></li>
-      </ul>
-      </div>
-    </nav>
+  <!-- Header Section -->
+  <div class="header">
+    
+    <a href="https://highapp-production.up.railway.app/" target="_blank" rel="noopener noreferrer">
+      <button class="cta-button">Start Your Adventure</button>
+    </a>
+    
   </div>
-  
 
-  <!-- Main Content -->
-  <div class="content">
-    <div class="character">
-      <!-- Character or additional content -->
+  <!-- Parallax Scrolling Section -->
+  <div class="parallax"></div>
+
+  <!-- Main Story Section -->
+  <div class="story">
+    <h2>Our Journey</h2>
+    <div class="chapter">
+      <img src="./TraitsGIF.gif" alt="High Monkey Chapter 1">
+      <p> <span>High Monkey</span>, the build your own NFT. Build your monkey your way</p>
+    </div>
+    <div class="chapter">
+      <img src="./Wen2.gif" alt="High Monkey Chapter 2">
+      <p>Mint date <span>December 7</span> there will only ever be 1000 <span>High Monkeys</span></p>
+    </div>
+    <div class="chapter">
+      <img src="./BaseGIF.gif" alt="High Monkey Chapter 3">
+      <p> Proud to be built on <span>Base</span> </p>
     </div>
   </div>
+
+  <div class="call-to-action">
+    <h3>Join the High Monkey Adventure</h3>
+    <a href="https://medium.com/@highmonkey888/welcome-to-high-monkey-where-creativity-crypto-and-cannabis-collide-a4b1641468f8" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="cta-button">Learn More</a>
+  </div>
+  
 
   <!-- Footer Section -->
   <footer>
-    <div class="footer-links">
-      <a href="https://x.com/Highmonkey888">x</a>
-      <a href="https://discord.gg/8APu3VNYNR">Discord</a>
+    <p>&copy; 2024 High Monkey Project. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://x.com/Highmonkey888" target="_blank" rel="noopener noreferrer">X</a>
+      <a href="https://discord.gg/8APu3VNYNR" target="_blank" rel="noopener noreferrer">Discord</a>
     </div>
+    <div class="easter-egg">🍌 Click here for a surprise!</div>
   </footer>
+  
+  
 
-  <!-- JavaScript files -->
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="smoke.js"></script>
+  <!-- Scripts -->
+  <script>
+    // Easter egg script
+    document.querySelector('.easter-egg').addEventListener('click', () => {
+      alert('Ooh ooh ah ah! You found the secret banana!');
+    });
+  </script>
 </body>
 </html>
