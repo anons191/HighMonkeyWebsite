@@ -37,7 +37,7 @@
       font-size: 1.5rem;
       color: white;
       margin: 20px 0;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow behind the text */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     .header .cta-button {
@@ -47,24 +47,48 @@
       font-size: 1.2rem;
       padding: 15px 30px;
       border: none;
-      cursor: pointer;
+      cursor: not-allowed;
       border-radius: 5px;
       text-transform: uppercase;
-      transition: transform 0.3s ease, background-color 0.3s ease;
+      position: relative;
+      transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     }
 
     .header .cta-button:hover {
-      transform: scale(1.1);
       background-color: darkgoldenrod;
+      color: #999;
+    }
+
+    /* Tooltip styling */
+    .header .cta-button[data-tooltip]:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      top: -35px; /* Position the tooltip above the button */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black */
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .header .cta-button[data-tooltip]:hover::after {
+      opacity: 1;
     }
 
     /* Mobile Header Image */
-  @media (max-width: 768px) {
-    .header {
-      background: url('./Landing4mobile.png') no-repeat center center/cover;
-      background-color: black;
+    @media (max-width: 768px) {
+      .header {
+        background: url('./Landing4mobile.png') no-repeat center center/cover;
+        background-color: black;
+      }
     }
-  }
 
     /* Parallax Scrolling */
     .parallax {
@@ -91,13 +115,12 @@
       margin-bottom: 50px;
     }
 
-        .chapter img {
+    .chapter img {
       width: 100%;
       max-width: 600px;
       height: auto;
       border-radius: 10px;
     }
-
 
     .chapter p {
       font-size: 1.2rem;
@@ -135,8 +158,6 @@
       transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
-    
-
     .call-to-action .cta-button:hover {
       transform: scale(1.1);
       background-color: #fdd835;
@@ -164,20 +185,21 @@
 
     /* Keyframes */
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
-
   <!-- Header Section -->
   <div class="header">
-    
-    <a href="https://highapp-production.up.railway.app/" target="_blank" rel="noopener noreferrer">
-      <button class="cta-button">Mint your Monkey</button>
+    <a href="#" class="disabled-link">
+      <button class="cta-button" data-tooltip="Coming soon December 7th">Mint your Monkey</button>
     </a>
-    
   </div>
 
   <!-- Parallax Scrolling Section -->
@@ -188,26 +210,24 @@
     <h2>Our Journey</h2>
     <div class="chapter">
       <img src="./TraitsGIF.gif" alt="High Monkey Chapter 1">
-      <p> <span>High Monkey</span>, the build your own NFT. Build your monkey your way</p>
+      <p><span>High Monkey</span>, the build your own NFT. Build your monkey your way.</p>
     </div>
     <div class="chapter">
       <img src="./Wen2.gif" alt="High Monkey Chapter 2">
-      <p>Mint date <span>December 7</span> there will only ever be 1000 <span>High Monkeys</span></p>
+      <p>Mint date <span>December 7</span>. There will only ever be 1000 <span>High Monkeys</span>.</p>
     </div>
     <div class="chapter">
       <img src="./BaseGIF.gif" alt="High Monkey Chapter 3">
-      <p> Proud to be built on <span>Base</span> </p>
+      <p>Proud to be built on <span>Base</span>.</p>
     </div>
   </div>
 
+  <!-- Call-to-Action Section -->
   <div class="call-to-action">
     <h3>Join the High Monkey Adventure</h3>
-    <a href="https://medium.com/@highmonkey888/welcome-to-high-monkey-where-creativity-crypto-and-cannabis-collide-a4b1641468f8" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="cta-button">Learn More</a>
+    <a href="https://medium.com/@highmonkey888/welcome-to-high-monkey-where-creativity-crypto-and-cannabis-collide-a4b1641468f8"
+      target="_blank" rel="noopener noreferrer" class="cta-button">Learn More</a>
   </div>
-  
 
   <!-- Footer Section -->
   <footer>
@@ -218,8 +238,6 @@
     </div>
     <div class="easter-egg">🍌 Click here for a surprise!</div>
   </footer>
-  
-  
 
   <!-- Scripts -->
   <script>
