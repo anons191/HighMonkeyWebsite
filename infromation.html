@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Swing into the world of cryptocurrency with High Monkey's beginner-friendly guide.">
+  <title>Get Started with Crypto - High Monkey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+nav {
+  background: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #E76F51;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+section p, li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.icon {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.screenshot {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border: 3px solid #2A9D8F;
+  border-radius: 10px;
+}
+
+.footer {
+  background: #264653;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+.footer img {
+  width: 60px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* Smaller heading size for mobile */
+  }
+
+  header p {
+    font-size: 1rem; /* Adjust paragraph font size for readability */
+  }
+
+  nav {
+    flex-wrap: wrap; /* Allow navigation items to wrap */
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 10px; /* Add spacing for better tap targets */
+    font-size: 1rem; /* Reduce font size */
+  }
+
+  main {
+    padding: 10px; /* Reduce main padding */
+  }
+
+  section {
+    margin: 10px 0; /* Reduce section margin */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  section h2 {
+    font-size: 1.5rem; /* Reduce section heading size */
+  }
+
+  section p, li {
+    font-size: 1rem; /* Slightly smaller text */
+    line-height: 1.6;
+  }
+
+  .screenshot {
+    max-width: 90%; /* Ensure screenshots fit on small screens */
+  }
+
+  .footer {
+    padding: 15px 10px; /* Adjust footer padding for compact view */
+  }
+
+  .footer img {
+    width: 50px; /* Smaller logo for mobile */
+  }
+
+  .call-to-action .cta-button {
+    width: 100%; /* Full-width buttons for mobile */
+    max-width: 300px; /* Cap button width */
+    margin: 10px auto; /* Center-align buttons with spacing */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Crypto Jungle!</h1>
+    <p>Ready to swing into the world of crypto? Let’s get started!</p>
+  </header>
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#exchange">Exchanges</a>
+    <a href="#wallets">Wallets</a>
+    <a href="#dex">DEXs</a>
+    <a href="#nfts">NFTs</a>
+    <a href="#tokens">Tokens</a>
+  </nav>
+  <main>
+    <section id="intro">
+        <h2><img src="logo.jpeg" alt="Crypto Icon" class="icon"> What is Cryptocurrency?</h2>
+        <p>Cryptocurrency represents a new era in finance and technology, enabling secure, decentralized transactions without the need for traditional intermediaries like banks. This guide is designed to provide you with a clear understanding of cryptocurrency fundamentals and help you take your first steps with confidence, whether you're new to the space or just getting started.</p>
+      </section>
+      
+    <section id="exchange">
+      <h2> What is an Exchange?</h2>
+      <p>Cryptocurrency exchanges are platforms where you can buy, sell, and trade digital assets. They serve as the gateway to the crypto ecosystem, enabling you to convert traditional currencies like USD into cryptocurrencies such as Bitcoin or Ethereum. Exchanges are categorized into two main types:</p>
+
+<ul>
+  <li><strong>Centralized Exchanges (CEXs):</strong> These platforms, such as <a href="https://www.coinbase.com/" target="_blank">Coinbase</a> and <a href="https://crypto.com/" target="_blank">Crypto.com</a>, are operated by companies that act as intermediaries in your transactions. They provide user-friendly interfaces, high liquidity, and additional features like staking or lending. However, when using a CEX, the platform typically holds your cryptocurrency in its custody, meaning you rely on the exchange for security and access to your funds.</li>
+  <li><strong>Decentralized Exchanges (DEXs):</strong> Unlike CEXs, DEXs such as Uniswap and PancakeSwap operate without a central authority. Trades are conducted directly between users through smart contracts, giving you full control over your assets. While DEXs offer greater autonomy and privacy, they require a solid understanding of wallet management and carry risks like higher transaction fees and slippage.</li>
+</ul>
+
+<p>For those new to cryptocurrency, centralized exchanges are often the best starting point due to their simplicity and support resources. Here’s a step-by-step guide to getting started on a centralized exchange:</p>
+
+<ol>
+  <li><strong>Choose an Exchange:</strong> Select a reputable exchange such as <a href="https://www.coinbase.com/" target="_blank">Coinbase</a> for its beginner-friendly interface or <a href="https://crypto.com/" target="_blank">Crypto.com</a> for its wide range of features and rewards.</li>
+  <li><strong>Sign Up:</strong> Register using your email address and create a secure password. Most exchanges require identity verification (KYC) to comply with regulations, so be prepared to provide a government-issued ID.</li>
+  <li><strong>Secure Your Account:</strong> Activate two-factor authentication (2FA) to enhance your account’s security and protect against unauthorized access.</li>
+  <li><strong>Fund Your Account:</strong> Add funds using a payment method such as a bank transfer, debit card, or credit card. Both <a href="https://www.coinbase.com/" target="_blank">Coinbase</a> and <a href="https://crypto.com/" target="_blank">Crypto.com</a> support multiple payment options, including PayPal and Apple Pay in certain regions.</li>
+  <li><strong>Start Trading:</strong> Once your account is funded, you can purchase cryptocurrency. It’s recommended to start with widely-used assets like Bitcoin or Ethereum to familiarize yourself with the market.</li>
+</ol>
+
+<p>When you're ready to take control of your assets, consider transferring your cryptocurrency to a personal wallet for added security. This ensures that you retain full ownership and are not reliant on the exchange to access your funds.</p>
+
+     
+    </section>
+    <section id="wallets">
+        <h2>Wallets & Safety</h2>
+        <p>In the world of crypto, your wallet is your personal vault, holding your digital assets securely. Choosing the right wallet depends on your needs, and it’s crucial to understand the differences between them:</p>
+      
+        <ul>
+          <li>
+            <strong>Hot Wallets:</strong> These are connected to the internet and are great for convenience. They’re easy to use for everyday transactions but require careful management to ensure security. Some popular hot wallets include:
+            <ul>
+              <li>
+                <a href="https://www.okx.com/" target="_blank">OKX Wallet</a>: A versatile wallet that supports multiple blockchains and DeFi integration, making it ideal for managing diverse assets.
+              </li>
+              <li>
+                <a href="https://phantom.app/" target="_blank">Phantom Wallet</a>: Designed primarily for the Solana blockchain, this wallet is user-friendly and optimized for fast transactions and NFTs.
+              </li>
+              <li>
+                <a href="https://metamask.io/" target="_blank">MetaMask</a>: A widely-used wallet for Ethereum and compatible blockchains, perfect for interacting with DeFi apps and storing ERC-20 tokens.
+              </li>
+              <li>
+                <a href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet</a>: A standalone wallet that allows you to store a variety of cryptocurrencies while maintaining easy integration with the Coinbase exchange.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Cold Wallets:</strong> These are offline wallets that provide maximum security by keeping your assets disconnected from the internet. They’re best for long-term storage. Popular options include:
+            <ul>
+              <li><a href="https://www.ledger.com/" target="_blank">Ledger</a>: A hardware wallet with advanced security features and support for a wide range of cryptocurrencies.</li>
+              <li><a href="https://trezor.io/" target="_blank">Trezor</a>: Another top hardware wallet known for its user-friendly interface and robust security protocols.</li>
+            </ul>
+          </li>
+        </ul>
+      
+        <p>When setting up a wallet, always prioritize safety:</p>
+        <ol>
+          <li><strong>Never share your private keys or recovery phrase:</strong> These are the keys to your wallet, and sharing them can result in a total loss of your assets.</li>
+          <li><strong>Double-check wallet addresses:</strong> A single mistake in a wallet address can send your funds to the wrong place with no way to recover them.</li>
+          <li><strong>Beware of phishing scams:</strong> Always verify that you’re on the official wallet website before downloading software or entering sensitive information.</li>
+        </ol>
+      
+        <p>For beginners, hot wallets like <a href="https://metamask.io/" target="_blank">MetaMask</a> or <a href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet</a> are excellent starting points. As your portfolio grows, consider transferring funds to a cold wallet like <a href="https://www.ledger.com/" target="_blank">Ledger</a> for long-term security.</p>
+      
+       
+      </section>
+      
+      <section id="dex">
+        <h2> Decentralized Exchanges (DEXs)</h2>
+        <p>Decentralized Exchanges (DEXs) are platforms that allow you to trade cryptocurrencies directly with other users, without relying on a central authority. They operate on smart contracts, giving you full control of your funds while maintaining privacy and autonomy. Popular DEXs vary by blockchain:</p>
+      
+        <ul>
+          <li>
+            <strong>Ethereum (ETH):</strong> 
+            <a href="https://uniswap.org/" target="_blank">Uniswap</a> is one of the most widely used DEXs, offering seamless swaps of ERC-20 tokens and advanced features like liquidity pooling.
+          </li>
+          <li>
+            <strong>Base:</strong> 
+            <a href="https://uniswap.org/" target="_blank">Uniswap</a> is a prominent DEX optimized for the Base blockchain, designed to facilitate fast and low-cost trades with strong ecosystem support.
+          </li>
+          <li>
+            <strong>Solana (SOL):</strong> 
+            <a href="https://raydium.io/" target="_blank">Raydium</a> and <a href="https://jup.ag/" target="_blank">Jupiter</a> are top DEXs on Solana, known for their speed and low transaction fees. They support token swaps and integrations with Solana wallets like Phantom.
+          </li>
+        </ul>
+      
+        <p>Using a DEX can be simple if you follow these steps:</p>
+        <ol>
+          <li><strong>Connect Your Wallet:</strong> Use a compatible wallet such as MetaMask, OKX, or Phantom (for Solana). Most DEXs will have a "Connect Wallet" button to link your wallet to the platform.</li>
+          <li><strong>Choose Tokens to Trade:</strong> Select the cryptocurrency you want to trade and the token you want to receive. For example, swapping ETH for a stablecoin like USDC.</li>
+          <li><strong>Set Slippage Tolerance:</strong> Slippage is the difference between the expected and actual price due to market movement. Adjust this setting in the DEX to avoid failed transactions.</li>
+          <li><strong>Review and Confirm:</strong> Double-check the transaction details, including fees, before confirming the trade in your wallet.</li>
+        </ol>
+      
+        <p>DEXs are powerful tools, but it’s important to be cautious:</p>
+        <ul>
+          <li><strong>Understand Gas Fees:</strong> On Ethereum, transactions may have high fees during network congestion. Chains like Solana and Base often offer lower fees.</li>
+          <li><strong>Watch for Fake Tokens:</strong> Always verify token contracts on platforms like <a href="https://www.coingecko.com/" target="_blank">CoinGecko</a> to avoid scams.</li>
+          <li><strong>Practice Security:</strong> Only use trusted DEXs and double-check links to avoid phishing sites.</li>
+        </ul>
+      </section>
+      
+      <section id="nfts">
+        <h2> Buying NFTs</h2>
+        <p>Non-Fungible Tokens (NFTs) are unique digital assets that represent ownership of a specific item or piece of content. Unlike cryptocurrencies like Bitcoin or Ethereum, which are interchangeable (fungible), each NFT is distinct and cannot be replaced. NFTs can represent art, collectibles, virtual real estate, or even access to exclusive communities.</p>
+      
+        <p><strong>High Monkey NFTs</strong> are a perfect example of this. Each High Monkey NFT is a customizable, one-of-a-kind collectible that not only serves as a piece of digital art but also grants its holder access to a vibrant community and unique lore. With High Monkey, you’re not just buying an NFT—you’re joining a mission to uncover the legendary Bitcoin City!</p>
+      
+        <p>Here’s how to buy an NFT and join the High Monkey adventure:</p>
+        <ol>
+          <li><strong>Choose a Marketplace:</strong> Popular platforms like <a href="https://opensea.io/" target="_blank">OpenSea</a>, <a href="https://rarible.com/" target="_blank">Rarible</a>, or <a href="https://magiceden.io/" target="_blank">Magic Eden</a> (for Solana-based NFTs) are excellent starting points. High Monkey NFTs are listed on <a href="https://highmonkey.wtf/" target="_blank">our official website</a>.</li>
+          <li><strong>Connect Your Wallet:</strong> Use a wallet like <a href="https://metamask.io/" target="_blank">MetaMask</a>, <a href="https://phantom.app/" target="_blank">Phantom</a>, or <a href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet</a>. Ensure you have enough cryptocurrency (e.g., ETH or SOL) to make a purchase.</li>
+          <li><strong>Browse and Select:</strong> Explore the collection to find an NFT that resonates with you. In the case of High Monkey, you can customize your monkey’s attributes before minting it.</li>
+          <li><strong>Confirm Your Purchase:</strong> Click "Buy" or "Mint" and confirm the transaction in your wallet. The NFT will appear in your wallet once the transaction is complete.</li>
+        </ol>
+      
+        <p>Why buy NFTs?</p>
+        <ul>
+          <li><strong>Ownership:</strong> You hold verified proof of ownership on the blockchain.</li>
+          <li><strong>Community:</strong> Many NFT projects, like High Monkey, offer access to exclusive events, chats, and other benefits.</li>
+          <li><strong>Creativity:</strong> NFTs often support artists and creators directly, helping to foster innovation.</li>
+        </ul>
+      
+        <p>High Monkey is your ticket to a world of creativity, fun, and decentralized exploration. Start your NFT journey today and be part of the crypto jungle revolution!</p>
+      
+      </section>
+      
+      <section id="tokens">
+        <h2> Finding New Tokens</h2>
+        <p>Exploring new tokens can be exciting but also risky. The key is to do thorough research and use reliable tools to evaluate the potential of a token before investing. Here are some tools and strategies to help you discover and analyze new opportunities:</p>
+      
+        <ul>
+          <li>
+            <strong><a href="https://www.coingecko.com/" target="_blank">CoinGecko</a>:</strong> One of the most comprehensive cryptocurrency data aggregators. Use CoinGecko to:
+            <ul>
+              <li>Track token prices, trading volume, and market capitalization.</li>
+              <li>View token contract addresses to avoid scams.</li>
+              <li>Explore market data across multiple exchanges.</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap</a>:</strong> Another popular platform for tracking cryptocurrency data. With CoinMarketCap, you can:
+            <ul>
+              <li>Access price charts, market rankings, and token descriptions.</li>
+              <li>Identify trending tokens and recently added projects.</li>
+              <li>Monitor community and social media activity.</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.dextools.io/" target="_blank">DEXTools</a>:</strong> A powerful analytics platform for decentralized exchanges. DEXTools helps you:
+            <ul>
+              <li>Analyze liquidity and trading pairs on DEXs like Uniswap or PancakeSwap.</li>
+              <li>Track live token swaps and order books.</li>
+              <li>Review price charts and historical data for specific tokens.</li>
+            </ul>
+          </li>
+        </ul>
+      
+        <p>When evaluating a new token, follow these steps:</p>
+        <ol>
+          <li>
+            <strong>Search for the Token:</strong> Use platforms like <a href="https://www.coingecko.com/" target="_blank">CoinGecko</a>, <a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap</a>, or <a href="https://www.dextools.io/" target="_blank">DEXTools</a> to look up the token. Verify its contract address to ensure it’s legitimate.
+          </li>
+          <li>
+            <strong>Check Liquidity and Volume:</strong> Low liquidity or trading volume can be a red flag, indicating that it may be difficult to buy or sell the token without affecting its price significantly.
+          </li>
+          <li>
+            <strong>Analyze the Community:</strong> A strong, engaged community is often a sign of a healthy project. Look for active discussions on platforms like Discord, Telegram, or Twitter.
+          </li>
+          <li>
+            <strong>Review the Tokenomics:</strong> Understand the supply, utility, and distribution of the token. Projects with clear, sustainable tokenomics are often more reliable.
+          </li>
+          <li>
+            <strong>Monitor Development Activity:</strong> Check for regular updates and active contributions on GitHub or project websites. Stagnant development could be a warning sign.
+          </li>
+        </ol>
+      
+        <p>Finding the "next big thing" in crypto requires patience and research. By using tools like <a href="https://www.coingecko.com/" target="_blank">CoinGecko</a>, <a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap</a>, and <a href="https://www.dextools.io/" target="_blank">DEXTools</a>, you can make more informed decisions and navigate the crypto jungle like a pro!</p>
+      </section>
+      
+  </main>
+  <footer class="footer">
+    <p>© 2024 High Monkey - Swinging through the crypto jungle with you!</p>
+    <img src="logo.jpeg" alt="High Monkey Logo">
+  </footer>
+</body>
+</html>

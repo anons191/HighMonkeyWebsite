@@ -133,35 +133,71 @@
       color: #ff7f00;
     }
 
-    /* Call-to-Action Section */
-    .call-to-action {
-      padding: 50px;
-      text-align: center;
-      background-color: #1b5e20;
-      color: white;
-    }
+ /* Call-to-Action Section */
+.call-to-action {
+  padding: 50px;
+  text-align: center;
+  background-color: #1b5e20;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: center;
+  gap: 10px; /* Adds consistent spacing between items */
+}
 
-    .call-to-action h3 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+.call-to-action h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
-    .call-to-action .cta-button {
-      background-color: #ffeb3b;
-      color: #333;
-      font-size: 1.2rem;
-      padding: 15px 30px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      text-transform: uppercase;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
+.call-to-action .cta-button {
+  background-color: #ffeb3b;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 100%; /* Ensure buttons are full-width on mobile */
+  max-width: 300px; /* Limit the button width for larger screens */
+}
 
-    .call-to-action .cta-button:hover {
-      transform: scale(1.1);
-      background-color: #fdd835;
-    }
+.call-to-action .cta-button:hover {
+  transform: scale(1.1);
+  background-color: #fdd835;
+}
+
+/* Secondary Button */
+.call-to-action .cta-button.secondary {
+  background-color: #ffffff;
+  color: #1b5e20;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: 2px solid #1b5e20;
+  text-transform: none;
+}
+
+.call-to-action .cta-button.secondary:hover {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 768px) {
+  .call-to-action {
+    flex-direction: row; /* Align items horizontally on larger screens */
+    justify-content: center;
+  }
+
+  .call-to-action .cta-button {
+    width: auto; /* Let buttons adjust to their content size */
+  }
+}
+
 
     /* Footer */
     footer {
@@ -227,7 +263,11 @@
     <h3>Join the High Monkey Adventure</h3>
     <a href="https://medium.com/@highmonkey888/welcome-to-high-monkey-where-creativity-crypto-and-cannabis-collide-a4b1641468f8"
       target="_blank" rel="noopener noreferrer" class="cta-button">Learn More</a>
+    <a href="infromation.html" 
+      target="_blank" rel="noopener noreferrer" class="cta-button secondary">Basics of Crypto</a>
   </div>
+  
+  
 
   <!-- Footer Section -->
   <footer>
