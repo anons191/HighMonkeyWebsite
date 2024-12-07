@@ -185,6 +185,27 @@
   color: #1b5e20;
   transform: scale(1.05);
 }
+.mintbutton {
+  background-color: #ffffff; /* White background */
+  color: #1b5e20; /* Green text */
+  font-size: 1rem; /* Base font size */
+  font-family: 'Arial', sans-serif; /* Clean font family */
+  padding: 12px 25px; /* Padding for the button */
+  border: 2px solid #1b5e20; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  text-transform: uppercase; /* All uppercase for emphasis */
+  letter-spacing: 1px; /* Slight spacing between letters */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.mintbutton:hover {
+  background-color: #1b5e20; /* Green background on hover */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.05); /*Slightly enlarge on hover*/
+} 
+
 
 /* Responsive Adjustments for Larger Screens */
 @media (min-width: 768px) {
@@ -233,9 +254,10 @@
 <body>
   <!-- Header Section -->
   <div class="header">
-    <a href="#" class="disabled-link">
-      <button class="cta-button" data-tooltip="Coming soon December 7th">Mint your Monkey</button>
+    <a href="https://highapp-production.up.railway.app/" target="_blank" rel="noopener noreferrer">
+      <button class="mintbutton">Mint your Monkey</button>
     </a>
+    
   </div>
 
   <!-- Parallax Scrolling Section -->
